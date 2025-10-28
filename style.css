@@ -1,0 +1,33 @@
+:root{
+  --maroon: #7b001c;
+  --white: #ffffff;
+  --muted: #f3c7c7;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{background:var(--maroon);color:var(--white);display:flex;align-items:center;justify-content:center;min-height:100vh;padding:12px}
+.card-outer{width:100%;max-width:420px}
+.card{background:var(--maroon);border-radius:10px;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,0.25)}
+.top{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:8px}
+.logo{width:64px;height:64px;object-fit:cover;border-radius:8px;border:2px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);padding:6px}
+.title{font-size:20px;line-height:1.05;text-align:center;letter-spacing:1px;font-weight:700}
+.title .small{font-size:12px;font-weight:600;display:block;margin-top:2px}
+.subtitle{font-size:13px;opacity:0.95;text-align:center;margin-top:4px;color:var(--white)}
+.content{margin-top:10px;background:transparent;padding:8px;border-radius:8px}
+.section-title{font-size:14px;margin-bottom:6px;color:var(--white);text-align:center}
+.list{list-style:none;text-align:center;margin-bottom:8px}
+.list li{margin:6px 0;font-size:13px}
+.meta{text-align:center;font-size:12px;margin:8px 0;color:var(--white)}
+.small-list{text-align:center;font-size:13px;margin:6px 0;color:var(--white)}
+.price-note{text-align:center;font-weight:700;margin:10px 0;font-size:14px}
+.contact-block{text-align:center;margin-top:8px}
+.contact-name{font-weight:700}
+.contact-wa a{color:var(--white);text-decoration:underline;font-weight:600}
+.halal-note{margin-top:6px;font-size:12px}
+.foot{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:12px;border-top:1px solid rgba(255,255,255,0.06);padding-top:10px}
+.qr img{width:110px;height:110px;border-radius:8px;border:3px solid rgba(255,255,255,0.06)}
+.qr small{display:block;font-size:11px;margin-top:6px;color:rgba(255,255,255,0.9)}
+.credits{font-size:10px;opacity:0.95;text-align:center;color:rgba(255,255,255,0.95)}
+.credits .assist{font-size:9px;opacity:0.85}
+@media(min-width:480px){
+  .card{max-width:340px;margin:0 auto}
+}
